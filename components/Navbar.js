@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../public/logo.webp'
+import { AiOutlineShoppingCart } from 'react-icons/ai';
+
 const Navbar = () => {
   return (
     <div>
@@ -18,7 +20,7 @@ const Navbar = () => {
       <Link href={'/stickers'}><a className="mr-5 text-rose-600 font-bold hover:text-gray-900">Stickers</a></Link>
       <Link href={'/mugs'}><a className="mr-5 text-rose-600 font-bold hover:text-gray-900">Mugs</a></Link>
     </nav>
-    <button className="inline-flex items-center bg-rose-500 font-bold  border-0 py-1 px-3 focus:outline-none hover:text-yellow-900    hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Add To Cart
+    <button className="inline-flex items-center bg-rose-500 font-bold  border-0 py-1 px-3 focus:outline-none hover:text-yellow-900    hover:bg-gray-200 rounded text-base mt-4 md:mt-0"><span className='text-3xl'><AiOutlineShoppingCart/></span>Add To Cart
       <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
       </svg>
