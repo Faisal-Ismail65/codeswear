@@ -14,7 +14,7 @@ const Tshirts = () => {
     <div>
       <section className="text-gray-600 body-font">
   <div className="container px-5 py-24 mx-auto">
-    <div className="flex flex-wrap -m-4">
+    <div className="flex flex-wrap -m-4 justify-center">
       <Link href={'/product/wear-the-code'}><div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer">
         <a className="block relative  rounded overflow-hidden">
           <Image alt="ecommerce" className=" object-top w-full h-full block" src={liverpool} width={500} height={450} />
