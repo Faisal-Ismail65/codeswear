@@ -4,6 +4,7 @@ import Image from 'next/image'
 import logo from '../public/logo.webp'
 import { AiOutlineShoppingCart,AiFillCloseCircle,AiFillPlusCircle,AiFillMinusCircle } from 'react-icons/ai';
 import {BsFillBagCheckFill ,BsFillBagXFill} from 'react-icons/bs'
+import {MdAccountCircle} from 'react-icons/md'
 const Navbar = (props) => {
   const toggleCart = () =>{
     if(ref.current.classList.contains('translate-x-full')){
@@ -29,13 +30,18 @@ const Navbar = (props) => {
       <Link href={'/hoodies'}><a className="mr-5 text-rose-600 font-bold hover:text-gray-900">Hoodies</a></Link>
       <Link href={'/stickers'}><a className="mr-5 text-rose-600 font-bold hover:text-gray-900">Stickers</a></Link>
       <Link href={'/mugs'}><a className="mr-5 text-rose-600 font-bold hover:text-gray-900">Mugs</a></Link>
+      
     </nav>
-    <button onClick={toggleCart} className="inline-flex absolute right-0 items-center bg-rose-500 font-bold  border-0 py-1 px-3 focus:outline-none hover:text-yellow-900    hover:bg-gray-200 rounded text-base mt-4 md:mt-0"><span className='text-3xl'><AiOutlineShoppingCart/></span>Add To Cart
+    
+    <div className='flex' >
+    <Link href={'login'} ><MdAccountCircle className='text-4xl cursor-pointer mr-40' /></Link>  
+    <button onClick={toggleCart} className="inline-flex absolute right-0 top-6 items-center bg-rose-500 font-bold  border-0 py-1 px-3 focus:outline-none hover:text-yellow-900    hover:bg-gray-200 rounded text-base mt-4 md:mt-0"><span className='text-3xl'><AiOutlineShoppingCart/></span>Add To Cart
+    
       <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
       </svg>
     </button>
-    
+    </div>
   </div>
 </header> 
 <div ref={ref} className="w-72  z-10 sideCart absolute h-full  bg-rose-300 top-5 right-0 px-8 py-10 transform transition-transform translate-x-full ">
