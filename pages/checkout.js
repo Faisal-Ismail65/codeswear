@@ -2,8 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import { AiOutlineShoppingCart,AiFillCloseCircle,AiFillPlusCircle,AiFillMinusCircle } from 'react-icons/ai';
 import {BsFillBagCheckFill ,BsFillBagXFill} from 'react-icons/bs'
-const Checkout = (props) => {
-  return (
+const Checkout = (
+  
     <div className='container m-auto'>
       <h1 className='font-bold text-3xl my-8 text-center text-rose-600'>Checkout</h1>
       <h2 className='font-bold text-xl my-8 text-center text-rose-600'>Delivery Details</h2>
@@ -62,7 +62,7 @@ const Checkout = (props) => {
       {Object.keys(props.cart).length == 0 && <div className='my-4 text-lg'>Cart is Empty!</div>}
       {Object.keys(props.cart).map((k)=>{return <li key={k}>
         <div className="item flex">
-          <div className="font-semibold">{props.cart[k].name}</div>
+          <div className="font-semibold">{props.cart[k].name}({props.cart[k].size}/{props.cart[k].varient})</div>
           <div className='mx-10  flex items-center text-xl font-semibold justify-ceter w-1/3'><AiFillMinusCircle onClick={()=>{props.removeFromCart(k,1,props.cart[k].price,props.cart[k].size,props.cart[k].varient)}} className='cursor-pointer mx-1 text-3xl text-rose-500'/>{props.cart[k].qty}<AiFillPlusCircle onClick={()=>{props.addToCart(k,1,props.cart[k].price,props.cart[k].size,props.cart[k].varient)}} className=' cursor-pointer mx-1 text-rose-500 text-3xl'/></div>
         </div>
       </li>})}
@@ -75,6 +75,6 @@ const Checkout = (props) => {
     </div>
     </div>
   )
-}
+
 
 export default Checkout

@@ -14,7 +14,7 @@ const Footer = () => {
         <Image src={logo} alt='logo'></Image>
       </a>
       </Link>
-      <p className="mt-2 text-sm text-gray-500 mx-4">Air plant banjo lyft occupy retro adaptogen indego</p>
+      <p className="mt-2 text-sm text-gray-500 mx-4">Wear the &lt;Code&gt;</p>
     </div>
     <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
       <div className="lg:w-1/4 md:w-1/2 w-full px-4">
@@ -89,7 +89,7 @@ const Footer = () => {
   </div>
   <div className="bg-gray-100">
     <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-      <p className="text-gray-500 text-sm text-center sm:text-left">© 2022 Codeswear.com—
+      <p className="text-gray-500 text-sm text-center sm:text-left">© 2022 Codeswear.com — All Rights Reserved.
         <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">@faisalismail</a>
       </p>
       <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">

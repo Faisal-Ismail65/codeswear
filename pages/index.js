@@ -10,7 +10,7 @@ export default function Home() {
         <meta name="description" content="Codeswear.com - Wear the code"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Image src={home} alt='wear the code' width={1400} height={500}></Image>
+      {/* <Image  src={home} alt='wear the code' width={1400} height={500}></Image> */}
       <section className="text-gray-600 body-font">
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
